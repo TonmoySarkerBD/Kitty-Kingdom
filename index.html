@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kitty Kingdom</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+
     <!-- Tailwind and Daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,22 +27,31 @@
             }
         }
     </script>
+
+    <!-- Custom CSS -->
+    <style>
+        .adlam-display-regular {
+            font-family: "ADLaM Display", serif;
+            font-style: normal;
+        }
+    </style>
 </head>
 
-<body>
+<body class="adlam-display-regular">
     <!-- Header Section -->
-    <header>
-        <nav class="bg-nav">
-            <div class="flex justify-between px-10 py-5  lg:px-32">
+    <header class="bg-white">
+        <nav class="bg-nav mb-4 border-b-slate-400 border-b-2 md:border-hidden">
+            <div class="flex justify-between px-[10%] py-1">
 
-            
+
 
                 <!-- Logo Section -->
                 <div class="">
                     <a href="index.html" class="flex flex-row gap-2"><img src="./c1-assets/logo-header.png"
                             alt="Kitty Kingdom Logo">
 
-                        <h1 class="font-extrabold uppercaseh hidden md:block">Kitty <br> Kingdom</h1>
+                        <h1 class="font-extrabold text-xl uppercaseh hidden md:block"><span
+                                class="text-warning">K</span>itty <br> <span class="text-warning">K</span>ingdom</h1>
 
                     </a>
                 </div>
@@ -53,7 +69,7 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[20] mt-3 -ml-16 bg-warning w-32 p-2 shadow">
                             <li class="hover:bg-amber-200"><a>Find a pet</a></li>
                             <li class="hover:bg-amber-200"><a>Breeds</a></li>
                             <li class="hover:bg-amber-200"><a>Contact us</a></li>
@@ -65,7 +81,7 @@
 
                 <!-- Menu Section -->
                 <div class="hidden lg:block">
-                    <ul class="menu menu-horizontal ">
+                    <ul class="menu menu-horizontal text-lg">
                         <li><a class="hover:bg-amber-200">Find a pet</a></li>
                         <li><a class="hover:bg-amber-200">Breeds</a></li>
                         <li><a class="hover:bg-amber-200">Contact us</a></li>
@@ -103,14 +119,41 @@
 
                 </div>
             </div>
-
-
         </nav>
+
+
+        <!-- Banner Section -->
+        <div class="mx-[10%] py-5">
+            <div class=" bg-white lg:min-w-full">
+                <div class="flex-col">
+                    <div class="relative z-10 flex flex-col gap-4 lg:flex-col lg:gap-8">
+                        <h1 class="text-3xl md:text-6xl font-bold">Pamper Your Pet,<br> Because They <br> Deserve the
+                            Best</h1>
+                        <p class="text-base text-slate-600 md:w-1/2">
+                            At Kitty Kingdom, we believe your pet is more than just an animal—they’re a cherished member
+                            of the family. That’s why we offer only the highest-quality products designed to pamper your
+                            furry (or feathered) friends.
+                        </p>
+                        <div>
+                            <button class="btn btn-warning px-10">Find a pet</button>
+                        </div>
+                    </div>
+
+                    <img src="./c1-assets/cat-big.png" class="-mt-24 md:-mt-64 lg:min-w-full lg:-mt-96 " />
+                </div>
+            </div>
+        </div>
 
     </header>
 
     <!-- Main Section -->
     <main>
+
+        <!-- Browse By Categories Section -->
+         <section class="Browse-By-Categories">
+            
+
+         </section>
 
     </main>
 
