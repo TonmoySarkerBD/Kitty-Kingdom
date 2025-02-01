@@ -97,11 +97,16 @@
 
                     <button class="btn btn-ghost btn-circle hover:bg-amber-200">
                         <div class="indicator">
+                            
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                             </svg>
+                            <span class="relative -ml-2 flex h-3 w-3">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-3 w-3 bg-warning"></span>
+                              </span>
                             <!-- <span class="badge badge-xs badge-primary indicator-item"></span> -->
                         </div>
                     </button>
@@ -123,13 +128,12 @@
             </div>
         </nav>
 
-
         <!-- Banner Section -->
         <div class="mx-[10%] py-5">
             <div class=" bg-white lg:min-w-full">
                 <div class="flex-col">
                     <div class="relative z-10 flex flex-col gap-4 lg:flex-col lg:gap-8">
-                        <h1 class="text-3xl md:text-6xl font-bold">Pamper Your Pet,<br> Because They <br> Deserve the
+                        <h1 class="text-3xl md:text-6xl font-bold animate-pulse">Pamper Your Pet,<br> Because They <br> Deserve the
                             Best</h1>
                         <p class="text-base text-slate-600 md:w-1/2">
                             At Kitty Kingdom, we believe your pet is more than just an animal—they’re a cherished member
@@ -137,7 +141,7 @@
                             furry (or feathered) friends.
                         </p>
                         <div>
-                            <button class="btn bg-[#FFDC26] px-10">Find a pet</button>
+                            <button class="btn bg-[#FFDC26] hover:bg-amber-200 px-10">Find a pet</button>
                         </div>
                     </div>
 
